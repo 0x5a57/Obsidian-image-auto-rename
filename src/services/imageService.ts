@@ -37,7 +37,7 @@ export class ImageService {
         decodedImageLinks.forEach(imageUrl => {
             const extension = imageUrl.split('.').pop() || '';
             const fileName = imageUrl.split('/').pop() || '';
-            const hash = generateHash(fileName + Date.now());
+            const hash = generateHash(fileName);
             const newFileName = `${note.basename}_${hash}.${extension}`;
             newImageLinks.push(newFileName);
         });
@@ -62,6 +62,7 @@ export class ImageService {
         }
         
         await this.app.vault.modify(note, updatedContent);
+        new Notice('本笔记的所有图片重命名完成');
     }
 
     async renameImageFile(file: TFile) {
@@ -77,7 +78,7 @@ export class ImageService {
 
         const noteName = activeFile.basename;
         const oldFileName = file.name;
-        const hash = generateHash(file.name + Date.now());
+        const hash = generateHash(file.name);
         const newFileName = `${noteName}_${hash}.${file.extension}`;
         const newPath = normalizePath(`${attachmentsFolder}/${newFileName}`);
 

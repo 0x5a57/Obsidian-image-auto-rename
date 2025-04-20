@@ -1,10 +1,10 @@
 {
 	"id": "image-auto-rename",
 	"name": "Image Auto Rename",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
+	"description": "自动重命名粘贴或拖拽到笔记中的图片文件",
+	"author": "0x",
 	"authorUrl": "https://obsidian.md",
 	"fundingUrl": "https://obsidian.md/pricing",
 	"isDesktopOnly": false
