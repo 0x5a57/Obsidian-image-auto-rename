@@ -1,7 +1,7 @@
 {
 	"id": "image-auto-rename",
 	"name": "Image Auto Rename",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
 	"description": "自动重命名粘贴或拖拽到笔记中的图片文件",
 	"author": "0x",

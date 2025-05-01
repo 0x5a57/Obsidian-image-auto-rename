@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-sample-plugin",
-	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"version": "1.0.2",
+	"description": "自动重命名粘贴或拖拽到笔记中的图片文件",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
